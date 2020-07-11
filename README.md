@@ -12,7 +12,7 @@
 ---
 
 ## Concepts
-- @SpringBootApplication, *```scanBasePackages```*
+- *__@SpringBootApplication__*, *```scanBasePackages```*
 #### Spring Boot Actuator
 - Built-in endpoints 
 [[URL](https://docs.spring.io/spring-boot/docs/1.5.x/reference/html/production-ready-endpoints.html)]
@@ -21,8 +21,8 @@
 - Only /health and /infog are exposed by default
 - Update ```application.properties``` to customize ```/info``` endpoint  
 - Add ```management.endpoints.web.exposure.include/exclude``` to expose/exclude endpoints 
-[[application.properties]()]
-- Add Spring Security to secure REST endpoints (except /info and /health). Defaut account:
+[[application.properties](https://github.com/cpulover-practice/spring-boot/blob/master/src/main/resources/application.properties)]
+- Add Spring Security to secure REST endpoints (except ```/info``` and ```/health```). Defaut account:
   - Username: user
   - Password: generated security password in the console
 
@@ -39,12 +39,12 @@
 ## Notes/Tips
 - Place main app class in the root package above other packages.
 - Run Spring Boot app as Java app instead of on server, because the server is already embedded inside the app.
-- Inject values from application.properties file with @Value 
-[[FunRestController]()]
+- Inject values from application.properties file with *__@Value__* 
+[[FunRestController](https://github.com/cpulover-practice/spring-boot/blob/master/src/main/java/com/cpulover/springboot/rest/FunRestController.java)]
 - Do not use ```src/main/webapp``` directory if the app is packaged as a JAR
 - Override Java version in POM file
 - List of common properties 
-[[List](https://docs.spring.io/spring-boot/docs/current/reference/html/appendix-application-properties.html#common-application-properties)]
+[[URL](https://docs.spring.io/spring-boot/docs/current/reference/html/appendix-application-properties.html#common-application-properties)]
 
 
 
