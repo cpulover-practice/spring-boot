@@ -8,10 +8,13 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 //@RequestMapping("/")
 public class DemoRestController {
-
 	@GetMapping("/")
 	public String sayHello() {
-		return "Hello world! Time on server is: " + LocalDateTime.now();
+		return "Hello world!!!!!!! Time on server is: " + LocalDateTime.now();
 	}
-
+	
+	@GetMapping("/test")
+	public String test() {
+		return "Test for automatic reloading!";
+	}
 }
