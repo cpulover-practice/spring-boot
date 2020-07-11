@@ -39,9 +39,12 @@
 ## Notes/Tips
 - Place main app class in the root package above other packages.
 - Run Spring Boot app as Java app instead of on server, because the server is already embedded inside the app.
-- Inject values from properties file with @Value.
+- Inject values from application.properties file with @Value 
+[[FunRestController]()]
 - Do not use ```src/main/webapp``` directory if the app is packaged as a JAR
 - Override Java version in POM file
+- List of common properties 
+[[List](https://docs.spring.io/spring-boot/docs/current/reference/html/appendix-application-properties.html#common-application-properties)]
 
 
 
