@@ -9,15 +9,12 @@
 ---
 
 ## Dependencies
-### Spring Web 
+#### Spring Web 
 - Description: Spring MVC (including Spring REST) + embedded Tomcat
 - Bind path variable to request method parameter: @PathVariable vs @RequestParam 
 [[DemoRestController]()]
 
-### Spring Boot DevTools 
-- Description: supports automatic reloading app when making changes.
-
-### Spring Boot Actuator
+#### Spring Boot Actuator
 - Description: supporta built in (or custom) endpoints to monitor and manage app
 - Built-in endpoints 
 [[URL](https://docs.spring.io/spring-boot/docs/1.5.x/reference/html/production-ready-endpoints.html)]
@@ -28,18 +25,24 @@
 - Add ```management.endpoints.web.exposure.include/exclude``` to expose/exclude endpoints 
 [[application.properties](https://github.com/cpulover-practice/spring-boot/blob/master/src/main/resources/application.properties)]
 
-### Lombok
-
-### Spring Data JPA
-
-### REST Repository (Spring Data REST)
-
-### Spring Security
+#### Spring Security
 - Automaticaly secure REST endpoints (except ```actuator/info``` and ```actuator/health```). 
 - Defaut account:
   - Username: user
   - Password: generated security password in the console
 - Disable security: ```@SpringBootApplication(exclude = { SecurityAutoConfiguration.class, ManagementWebSecurityAutoConfiguration.class })```
+
+#### Spring Data JPA
+
+#### REST Repository (Spring Data REST)
+
+#### Lombok
+
+#### H2 Database
+
+#### Spring Boot DevTools 
+- Description: supports automatic reloading app when making changes.
+
 
 ---
 
